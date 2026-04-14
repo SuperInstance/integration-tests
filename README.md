@@ -2,30 +2,24 @@
 
 ## Description
 Integration tests for the **Cocapn Fleet** (https://github.com/SuperInstance).  
-Ensures that agents, protocols, and fleet components work together correctly.
+The suite validates cross‑agent communication, fleet protocol handling, Git agent operations, keeper interactions, self‑contained fleet behavior, trust capability enforcement, and workshop recipe execution.
 
 ## Usage
 ```bash
 # Install test dependencies (if any)
 pip install -r requirements.txt   # optional
 
-# Run all integration tests
+# Run all tests
 python -m unittest discover -s .
+
+# Run a specific test file
+python -m unittest test_fleet_protocol_integration.py
 ```
 
 ## Related
-- **Cocapn Fleet**: https://github.com/SuperInstance  
-- **GitHub Actions** configuration: `.github/`  
+- **Cocapn Fleet**: https://github.com/SuperInstance/cocapn-fleet  
+- **GitHub Actions workflows**: `.github/` directory in this repo  
 
 ---  
 
-**Repository contents**  
-- `test_cross_agent.py`  
-- `test_fleet_protocol_integration.py`  
-- `test_git_agent_integration.py`  
-- `test_keeper_integration.py`  
-- `test_self_contained_fleet.py`  
-- `test_trust_capability_integration.py`  
-- `test_workshop_recipe_integration.py`  
-- `LICENSE`  
-- `.github/` (CI workflows)  
+*License:* See `LICENSE` file.
