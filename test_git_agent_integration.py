@@ -212,7 +212,7 @@ class TestBootcampEnrollment(unittest.TestCase):
 
     def test_available_exercises_filtered_by_rank(self):
         """Available exercises are filtered by agent rank."""
-        bc = Bootcamp(progress_dir=str(self.tmp / "bootcamp))
+        bc = Bootcamp(progress_dir=str(self.tmp / "bootcamp"))
         bc.enroll("coder-agent")
         available = bc.get_available_exercises("coder-agent")
         # Novice has access to exercises with required_rank <= 1

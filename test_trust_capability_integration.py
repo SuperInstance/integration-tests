@@ -312,7 +312,7 @@ class TestCapabilityMiddlewareDeniesUnauthorized(unittest.TestCase):
 
     def test_audit_trail_records_checks(self):
         """Middleware records all permission checks."""
-        reg = CapabilityRegistry(data_dir=str(self.tmp / "caps))
+        reg = CapabilityRegistry(data_dir=str(self.tmp / "caps"))
         mw = CapabilityMiddleware(registry=reg)
         mw.check_command("look", "agent-x")
         mw.check_command("build", "agent-x")
